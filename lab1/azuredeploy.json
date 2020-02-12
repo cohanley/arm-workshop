@@ -29,14 +29,14 @@
     "resources": [
         {
             "type": "Microsoft.Storage/storageAccounts",
-            "name": "[variables('storageAccount')]",
+            "name": "azure101storage",
             "apiVersion": "2015-06-15",
-            "location": "[resourceGroup().location]",
+            "location": "Azure101IaaS.location",
             "tags": {
-                "displayName": "[variables('storageAccount')]"
+                "displayName": "azure101storage"
             },
             "properties": {
-                "accountType": "[parameters('accountType')]"
+                "accountType": "StorageV2"
             }
         }
     ],
